@@ -1,12 +1,10 @@
 import 'package:class_05_assignment/screen/bottom_bar.dart';
+import 'package:class_05_assignment/screen/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavController extends StatefulWidget {
   static final List<Widget> _widgetOptions = [
-    PageTextStyle(
-      bodyTaxt: 'Home',
-      myColors: Colors.red,
-    ),
+    HomeScreen(),
     PageTextStyle(
       bodyTaxt: 'Search',
       myColors: Colors.green,
