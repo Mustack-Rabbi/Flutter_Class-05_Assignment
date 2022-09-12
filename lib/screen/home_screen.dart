@@ -1,6 +1,7 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:class_05_assignment/utlis/app_styles.dart';
+import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -8,7 +9,78 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green,
+      backgroundColor: const Color.fromARGB(255, 217, 238, 218),
+      body: ListView(
+        children: [
+          Container(
+            padding:
+                const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        AnimatedTextKit(
+                          isRepeatingAnimation: false,
+                          animatedTexts: [
+                            TypewriterAnimatedText("Hi, Mustack Rabbi",
+                                textStyle: Styles.headLine6,
+                                speed: Duration(milliseconds: 150)),
+                          ],
+                        ),
+                        SizedBox(height: 5),
+                        Text(
+                          "Book Your Tickets",
+                          style: Styles.headLine4,
+                        ),
+                      ],
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(20.0),
+                      height: 80,
+                      width: 100,
+                      decoration: const BoxDecoration(
+                          gradient: LinearGradient(
+                            begin: Alignment.topRight,
+                            end: Alignment.bottomLeft,
+                            colors: [
+                              Colors.blue,
+                              Color.fromARGB(255, 217, 238, 218),
+                            ],
+                          ),
+                          borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(30),
+                              topRight: Radius.circular(10),
+                              bottomLeft: Radius.zero,
+                              bottomRight: Radius.circular(10)),
+                          image: DecorationImage(
+                              image:
+                                  AssetImage("assets/images/airplane_logo.png"),
+                              fit: BoxFit.cover)),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.white,
+                  ),
+                  child: Row(
+                    children: [Icon(FluentSystemIcons.ic_fluent_search_filled)],
+                  ),
+                )
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

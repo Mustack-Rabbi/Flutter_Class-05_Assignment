@@ -10,16 +10,17 @@ class Styles {
   static Color bgColor = const Color(0xFf3b3b3b);
   static TextStyle textStyle =
       TextStyle(color: textColor, fontSize: 30, fontWeight: FontWeight.bold);
-  static TextStyle headLineStyle1 =
-      TextStyle(color: textColor, fontSize: 30, fontWeight: FontWeight.bold);
-  static TextStyle headLineStyle2 =
-      TextStyle(color: textColor, fontSize: 30, fontWeight: FontWeight.bold);
-  static TextStyle headLineStyle3 =
-      TextStyle(color: textColor, fontSize: 30, fontWeight: FontWeight.bold);
-  static TextStyle headLineStyle4 =
-      TextStyle(color: textColor, fontSize: 30, fontWeight: FontWeight.bold);
-  static TextStyle headLineStyle5 =
-      TextStyle(color: textColor, fontSize: 30, fontWeight: FontWeight.bold);
-  static TextStyle headLineStyle6 =
-      TextStyle(color: textColor, fontSize: 30, fontWeight: FontWeight.bold);
+  //head line
+  static TextStyle headLine1 =
+      TextStyle(color: textColor, fontSize: 96, fontWeight: FontWeight.w300);
+  static TextStyle headLine2 =
+      TextStyle(color: textColor, fontSize: 60, fontWeight: FontWeight.w300);
+  static TextStyle headLine3 =
+      TextStyle(color: textColor, fontSize: 43, fontWeight: FontWeight.w400);
+  static TextStyle headLine4 =
+      TextStyle(color: textColor, fontSize: 34, fontWeight: FontWeight.w400);
+  static TextStyle headLine5 =
+      TextStyle(color: textColor, fontSize: 24, fontWeight: FontWeight.w400);
+  static TextStyle headLine6 =
+      TextStyle(color: textColor, fontSize: 20, fontWeight: FontWeight.w500);
 }
