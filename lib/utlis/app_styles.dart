@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 Color primary = Colors.amber;
@@ -20,7 +18,7 @@ class Styles {
   static TextStyle headLine4 =
       TextStyle(color: textColor, fontSize: 34, fontWeight: FontWeight.w400);
   static TextStyle headLine5 =
-      TextStyle(color: textColor, fontSize: 24, fontWeight: FontWeight.w400);
+      TextStyle(color: textColor, fontSize: 24, fontWeight: FontWeight.bold);
   static TextStyle headLine6 =
-      TextStyle(color: textColor, fontSize: 20, fontWeight: FontWeight.w500);
+      TextStyle(color: textColor, fontSize: 20, fontWeight: FontWeight.w400);
 }

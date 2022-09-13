@@ -34,14 +34,14 @@ class HomeScreen extends StatelessWidget {
                         SizedBox(height: 5),
                         Text(
                           "Book Your Tickets",
-                          style: Styles.headLine4,
+                          style: Styles.headLine5,
                         ),
                       ],
                     ),
                     Container(
                       padding: const EdgeInsets.all(20.0),
-                      height: 80,
-                      width: 100,
+                      height: 60,
+                      width: 80,
                       decoration: const BoxDecoration(
                           gradient: LinearGradient(
                             begin: Alignment.topRight,
@@ -52,7 +52,7 @@ class HomeScreen extends StatelessWidget {
                             ],
                           ),
                           borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(30),
+                              topLeft: Radius.circular(20),
                               topRight: Radius.circular(10),
                               bottomLeft: Radius.zero,
                               bottomRight: Radius.circular(10)),
@@ -72,9 +72,18 @@ class HomeScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                     color: Colors.white,
                   ),
-                  child: Row(
-                    children: [Icon(FluentSystemIcons.ic_fluent_search_filled)],
+                  child: TextField(
+                    decoration: InputDecoration(
+                      icon: Icon(FluentSystemIcons.ic_fluent_search_filled),
+                      hintText: 'Search',
+                      border: InputBorder.none,
+                    ),
                   ),
+                ),
+                SizedBox(height: 10),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [Text("New Tickets"), Text("See More")],
                 )
               ],
             ),
