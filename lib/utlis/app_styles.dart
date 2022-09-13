@@ -6,7 +6,11 @@ class Styles {
   static Color praimaryColor = primary;
   static Color textColor = const Color(0xFf3b3b3b);
   static Color bgColor = const Color(0xFf3b3b3b);
-  static TextStyle textStyle =
+  static TextStyle textStyle1 =
+      TextStyle(color: textColor, fontSize: 22, fontWeight: FontWeight.normal);
+  static TextStyle textStyle2 =
+      TextStyle(color: textColor, fontSize: 16, fontWeight: FontWeight.normal);
+  static TextStyle textStyle3 =
       TextStyle(color: textColor, fontSize: 30, fontWeight: FontWeight.bold);
   //head line
   static TextStyle headLine1 =

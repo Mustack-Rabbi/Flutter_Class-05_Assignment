@@ -67,7 +67,7 @@ class HomeScreen extends StatelessWidget {
                   height: 20,
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  padding: EdgeInsets.symmetric(vertical: 0, horizontal: 20),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     color: Colors.white,
@@ -80,10 +80,16 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 10),
+                SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text("New Tickets"), Text("See More")],
+                  children: [
+                    Text("New Tickets", style: Styles.textStyle2),
+                    Text(
+                      "See More",
+                      style: TextStyle(color: Colors.green),
+                    )
+                  ],
                 )
               ],
             ),

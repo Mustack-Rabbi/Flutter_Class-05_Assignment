@@ -70,7 +70,7 @@ class _BottomNavControllerState extends State<BottomNavController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Class 04 Assignment")),
+      /*   appBar: AppBar(title: const Text("Class 04 Assignment")), */
       body: Center(child: BottomNavController._widgetOptions[_selectedIndex]),
       bottomNavigationBar: BottomBar(
         onTap: _onItemTapped,
