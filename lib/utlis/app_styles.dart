@@ -12,6 +12,8 @@ class Styles {
       TextStyle(color: textColor, fontSize: 16, fontWeight: FontWeight.normal);
   static TextStyle textStyle3 =
       TextStyle(color: textColor, fontSize: 30, fontWeight: FontWeight.bold);
+  static TextStyle textStyle4 =
+      TextStyle(color: textColor, fontSize: 16, fontWeight: FontWeight.w400);
   //head line
   static TextStyle headLine1 =
       TextStyle(color: textColor, fontSize: 96, fontWeight: FontWeight.w300);

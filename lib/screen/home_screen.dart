@@ -1,4 +1,5 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:class_05_assignment/screen/ticket_view.dart';
 import 'package:class_05_assignment/utlis/app_styles.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
@@ -26,8 +27,8 @@ class HomeScreen extends StatelessWidget {
                         AnimatedTextKit(
                           isRepeatingAnimation: false,
                           animatedTexts: [
-                            TypewriterAnimatedText("Hi, Mustack Rabbi",
-                                textStyle: Styles.headLine6,
+                            TypewriterAnimatedText("Welcome, Mustack Rabbi",
+                                textStyle: Styles.textStyle4,
                                 speed: Duration(milliseconds: 150)),
                           ],
                         ),
@@ -90,7 +91,11 @@ class HomeScreen extends StatelessWidget {
                       style: TextStyle(color: Colors.green),
                     )
                   ],
-                )
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                TicketView()
               ],
             ),
           ),
