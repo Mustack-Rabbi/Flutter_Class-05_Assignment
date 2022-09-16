@@ -1,16 +1,31 @@
 # class_05_assignment
 
-A new Flutter project.
+## Flutter Class 05:
 
-## Getting Started
+> **Class 5 Topic:** ListView, Row, Colum, Utilw(folder): app_style.dart, Class (style), assets, BoxDecoration,animated_text_kit 4.2.2 (packages), widget(folder), spacer() .. etc
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## Flutter Class 05 Assignment:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1.Tricket App Design
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## Home Work:
+
+> ### 1. home_screen.dart
+
+```dart
+TextField(
+           decoration: InputDecoration(
+                      icon: Icon(FluentSystemIcons.ic_fluent_search_filled),
+                      hintText: 'Search',
+                      border: InputBorder.none,
+                    ),
+                  ),
+```
+
+## Result
+
+---

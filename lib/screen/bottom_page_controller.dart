@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class BottomNavController extends StatefulWidget {
   static final List<Widget> _widgetOptions = [
-    HomeScreen(),
+    const HomeScreen(),
     PageTextStyle(
       bodyTaxt: 'Search',
       myColors: Colors.green,

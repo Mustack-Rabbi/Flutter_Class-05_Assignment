@@ -29,10 +29,10 @@ class HomeScreen extends StatelessWidget {
                           animatedTexts: [
                             TypewriterAnimatedText("Welcome, Mustack Rabbi",
                                 textStyle: Styles.textStyle4,
-                                speed: Duration(milliseconds: 150)),
+                                speed: const Duration(milliseconds: 150)),
                           ],
                         ),
-                        SizedBox(height: 5),
+                        const SizedBox(height: 5),
                         Text(
                           "Book Your Tickets",
                           style: Styles.headLine5,
@@ -64,16 +64,17 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(vertical: 0, horizontal: 20),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 0, horizontal: 20),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     color: Colors.white,
                   ),
-                  child: TextField(
+                  child: const TextField(
                     decoration: InputDecoration(
                       icon: Icon(FluentSystemIcons.ic_fluent_search_filled),
                       hintText: 'Search',
@@ -81,21 +82,21 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("New Tickets", style: Styles.textStyle2),
-                    Text(
+                    const Text(
                       "See More",
                       style: TextStyle(color: Colors.green),
                     )
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                TicketView()
+                const TicketView()
               ],
             ),
           ),
