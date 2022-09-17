@@ -26,16 +26,37 @@ class TicketView extends StatelessWidget {
             Row(
               children: [
                 Text(
-                  "Dhaka",
+                  "DHK",
                   style: Styles.textStyle4.copyWith(color: Colors.white),
                 ),
-                const Spacer(),
+                Expanded(child: Container()),
                 const CircleContainer(),
-                const Spacer(),
+                Expanded(child: SizedBox(
+                  child: LayoutBuilder(
+                    builder:
+                        (BuildContext context, BoxConstraints constraints) {
+                      // print("The Screen With ${constraints.constrainWidth()}");
+
+                      return Flex(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        direction: Axis.horizontal,
+                        children: List.generate(
+                            (constraints.constrainWidth() / 12).floor(),
+                            (index) => SizedBox(
+                                  width: 3,
+                                  height: 1,
+                                  child: DecoratedBox(
+                                      decoration:
+                                          BoxDecoration(color: Colors.white)),
+                                )),
+                      );
+                    },
+                  ),
+                )),
                 const CircleContainer(),
-                const Spacer(),
+                Expanded(child: Container()),
                 Text(
-                  "Dhaka",
+                  "CTG",
                   style: Styles.textStyle4.copyWith(color: Colors.white),
                 )
               ],

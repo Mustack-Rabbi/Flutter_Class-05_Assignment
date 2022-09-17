@@ -21,6 +21,8 @@ class HomeScreen extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+                    // ---------- Welcome to the Profile ----------
+
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -39,6 +41,9 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ],
                     ),
+
+                    //---------- Apps Logo ----------
+
                     Container(
                       padding: const EdgeInsets.all(20.0),
                       height: 60,
@@ -64,9 +69,10 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(
-                  height: 20,
-                ),
+                const SizedBox(height: 20),
+
+                // ---------- Search here ----------
+
                 Container(
                   padding:
                       const EdgeInsets.symmetric(vertical: 0, horizontal: 20),
@@ -82,7 +88,11 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                 ),
+
                 const SizedBox(height: 20),
+
+                // ---------- New Ticket Option ----------
+
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -93,9 +103,11 @@ class HomeScreen extends StatelessWidget {
                     )
                   ],
                 ),
-                const SizedBox(
-                  height: 20,
-                ),
+
+                const SizedBox(height: 20),
+
+                // ---------- New Ticket View ----------
+
                 const TicketView()
               ],
             ),
