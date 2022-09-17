@@ -9,7 +9,10 @@ class CircleContainer extends StatelessWidget {
       padding: const EdgeInsets.all(3),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          border: Border.all(color: Colors.white, width: 2.5)),
+          border: Border.all(
+            color: Colors.white,
+            width: 2.5,
+          )),
     );
   }
 }
